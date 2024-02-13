@@ -1,14 +1,15 @@
-import { Button, Htag, P, Tag } from "@/components";
+"use client";
+
+import { Button, Htag, P, Rating, Tag } from "@/components";
+import { useState } from "react";
 
 export default function Home(): JSX.Element {
+  const [rating, setRating] = useState<number>(4);
   return (
     <main>
       <div>
         <Htag tag="h2">Текст</Htag>
-        <Button
-          apperance="primary"
-          arrow="right"
-        >
+        <Button apperance="primary" arrow="right">
           Кнопка
         </Button>
         <Button apperance="ghost" arrow="down">
@@ -26,6 +27,7 @@ export default function Home(): JSX.Element {
         <Tag size="s" href="https://www.youtube.com/">
           Тег
         </Tag>
+        <Rating rating={rating} isEditable setRating={setRating}></Rating>
       </div>
     </main>
   );

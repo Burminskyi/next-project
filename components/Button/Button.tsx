@@ -1,5 +1,3 @@
-'use client';
-
 import styles from "./Button.module.css";
 import { ButtonProps } from "./Button.props";
 import ArrowIcon from "./arrow.svg";
@@ -19,7 +17,6 @@ export const Button = ({
         [styles.ghost]: apperance === "ghost",
       })}
       {...props}
-      onClick={() => console.log("fsdfsdgfdsg")}
     >
       {children}
       {arrow !== "none" && (

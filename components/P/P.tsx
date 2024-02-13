@@ -1,5 +1,3 @@
-'use client';
-
 import styles from "./P.module.css";
 import { PProps } from "./P.props";
 import cn from "classnames";
