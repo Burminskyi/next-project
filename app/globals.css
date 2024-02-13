@@ -1,0 +1,35 @@
+:root {
+  --font-family: "Noto Sans", sans-serif;
+  --black: #3b434e;
+  --gray-light: #ebebeb;
+  --white: white;
+  --primary: #7653fc;
+  --primary-hover: #6b49f4;
+  --red: #fc836d;
+  --gerren: #1dc37e;
+  --green-light: #c8f8e4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+
+  max-width: 100vw;
+}
+
+body {
+  color: var(--black);
+  background: #f5f6f8;
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+}
